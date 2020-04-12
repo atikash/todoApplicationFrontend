@@ -68,8 +68,8 @@ refreshTodos(){
     this.router.navigate(['todos',id]);
   }
 
-  addTodo(id) {
-    console.log(`add ${id}`);
+  addTodo() {
+    console.log(`add todo`);
     this.router.navigate(['todos',-1]);
    
   }

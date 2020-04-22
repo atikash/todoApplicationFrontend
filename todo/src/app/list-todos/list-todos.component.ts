@@ -57,7 +57,7 @@ refreshTodos(){
       response => {
         console.log(response);
         this.todo = response;
-        this.message = `Delete of todo ${id} Successful`;
+        this.message = `Deletion of todo ${id} Successful`;
         this.refreshTodos();
       }
     );

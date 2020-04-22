@@ -20,21 +20,21 @@ export class LoginComponent implements OnInit {
   //Dependency Injection
 
   constructor(private router: Router,
-    private hardcodedAuthentication: HardcodedAuthenticationService,
+    // private hardcodedAuthentication: HardcodedAuthenticationService,
     private basicAuthentication: BasicAuthenticationService) { }
 
   ngOnInit(): void {
   }
-  handleLogin() {
-    // console.log(this.username)
-    // if(this.username === "atikash" && this.password === "dummy") {
-    if (this.hardcodedAuthentication.authenticate(this.username, this.password)) {
-      this.router.navigate(['welcome', this.username])
-      this.invalidLogin = false
-    }
-    else
-      this.invalidLogin = true
-  }
+  // handleLogin() {
+  //   // console.log(this.username)
+  //   // if(this.username === "atikash" && this.password === "dummy") {
+  //   if (this.hardcodedAuthentication.authenticate(this.username, this.password)) {
+  //     this.router.navigate(['welcome', this.username])
+  //     this.invalidLogin = false
+  //   }
+  //   else
+  //     this.invalidLogin = true
+  // }
 
 
   handleBasicAuthLogin() {

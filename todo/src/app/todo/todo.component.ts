@@ -27,7 +27,7 @@ export class TodoComponent implements OnInit {
     }
   }
   saveTodo() {
-    if (this.id === -1) {
+    if (this.id == -1) { //=== to use when compairing object  == is better to use when using primitive
       this.todoService.createTodo('atikash', this.todo).subscribe(
         data => {
           console.log(data);
